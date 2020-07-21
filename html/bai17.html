@@ -6,12 +6,11 @@
     <title>Document</title>
 </head>
 <body>
+    <input id="td" type="button" value="Thu" onclick="thu()">
     <script>
-        var d = new Date()
-        var namsinh, namhientai
-        namhientai = d.getFullYear()
-        namsinh = prompt("ban sinh nam bao nhieu?")
-        alert("tuoi cua ban bay gio la : " + (namhientai - namsinh))
+        function thu() {
+            document.title = 'Ban da click chuot'
+        }
     </script>
 </body>
 </html>

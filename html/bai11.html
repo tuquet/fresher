@@ -1,0 +1,24 @@
+<HTML>
+<TITLE>Sắp xếp mảng</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<BODY>
+    <script language="JavaScript">
+        var soluong, x;
+        var DS = new Array(10)
+        console.log(DS)
+        soluong = prompt("ban can nhap bao nhieu nguoi")
+        for (var i = 0; i < soluong; i++) {
+            DS [i] = prompt ("nhap ho va ten")
+        }
+        // DS.sort (); /sap xep danh sach ho va ten /
+        document.write("<h1> Danh sach sap xep la </h1>")
+        for (x in DS)
+        {
+            document.write ( DS[x])
+            document.write ("<br>")
+        }
+    </script>
+</BODY>
+
+</HTML>

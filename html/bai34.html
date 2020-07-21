@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <div><input type="number" v-model="a"></div>
+        <div><input type="number" v-model="b"></div>
+        <div><input type="number" v-model="c"></div>
+        <div><input type="number" v-model="kq"></div>
+        <button @click="cong()">Cong</button>
+        <button @click="tru()">Tru</button>
+        <button @click="nhan()">Nhan</button>
+        <button @click="chia()">Chia</button>
+        <button @click="reset()">Reset</button>
+        <button @click="save()">Save</button>
+        <button @click="chech()">Check</button>
+        <div>
+            {{ saveList }}
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            a: '',
+            b: '',
+            c: '',
+            kq: '',
+            saveList: [],
+        },
+        methods: {
+            cong() {
+                this.kq = parseInt(this.a) + parseInt(this.b) + parseInt(this.c)
+            },
+            tru() {
+                this.kq = parseInt(this.a) - parseInt(this.b) - parseInt(this.c)
+            },
+            nhan() {
+                this.kq = parseInt(this.a) * parseInt(this.b) * parseInt(this.c)
+            },
+            chia() {
+                this.kq = parseInt(this.a) / parseInt(this.b) / parseInt(this.c)
+            },
+            reset() {
+                this.a = ''
+                this.b = ''
+                this.c = ''
+                this.kq = ''
+                this.saveList = []
+            },
+            save() {
+                this.saveList.push(this.kq)
+            },
+            check() {
+                
+            }
+        },
+    })
+</script>

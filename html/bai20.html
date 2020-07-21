@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="doimau" id="mausac">
+        <option value="green">mauxanh</option>
+        <option value="red">maudo</option>
+        <option value="black">mauden</option>
+        <option value="purple">mautim</option>
+    </select>
+    <button onclick="doimau()">doimau</button>
+    <script>
+        function doimau() {
+            document.bgColor = document.getElementById('mausac').value
+        }
+    </script>
+</body>
+</html>

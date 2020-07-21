@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="sl" onkeyup="thanhtoan()">
+    <input type="text" id="dg" onkeyup="thanhtoan()">
+    <input type="text" id="tt">
+    <script>
+        function thanhtoan() {
+            var soluong = document.getElementById('sl').value
+            var dongia = document.getElementById('dg').value
+            var thanhtoan = document.getElementById('tt')
+            thanhtoan.value = soluong * dongia
+        }
+    </script>
+</body>
+</html>

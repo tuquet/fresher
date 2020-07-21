@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    </style>
+    <div id="app">
+        <h1>Count: {{ counter }}</h1>
+        <button @click="handleClick(10, $event)">Click me</button>
+        <div class="box" @mousemove="handleClick(1, $event)"></div>
+        <form action="http://facebook.com">
+            <label>Nhap firtsname</label>
+            <input type="text" name="firtsname"> <br>
+            <label>Nhap email</label>
+            <input type="email" name="email"><br>
+            <input type="submit" value="Dang nhap">
+        </form>
+    </div>
+</body>
+    <script>
+        var app = new Vue( {
+            el: '#app',
+        data: {
+            counter: 0
+        },
+        methods: {
+            handleClick(number, event) {
+                console.log('Click', event.target);
+                this.counter += number;
+                // this.counter = this.counter + number
+            },
+        }
+        })
+    </script>
+</html>

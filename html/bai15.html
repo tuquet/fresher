@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="s1">
+    <input type="text" id="s2">
+    <input type="text" id="kt">
+    <input type="button" value="thuketqua" onclick="ketqua()">
+    <script>
+        function ketqua() {
+            var so1 = document.getElementById('s1').value
+            var so2 = document.getElementById('s2').value
+            var ketqua = document.getElementById('kt')
+            ketqua.value = parseFloat(so1) + parseFloat(so2)
+        }
+    </script>
+</body>
+</html>

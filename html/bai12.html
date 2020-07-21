@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" name="Dangky" value="Đăng ký" onclick="alert('Dang ky Email')">
+    <input type="button" name="Chaomung" value="Chào mừng" onclick="alert('Hello world')">
+    <input type="button" name="Welcome" value="Welcome" onclick="document.write('Welcome to javascript')">
+    <input type="button" name="baitoan" value="Bài toán" onclick="alert('Tổng là:' + (x + y))">
+    <script>
+        var x,y; x=10; y=20
+    </script>
+    <input type="button" id="ktt" name="Kiemtra" value="Kiểm tra" onclick="Kiemtra();">
+    <script>
+        function Kiemtra() {
+            var Kiemtra = document.getElementById('ktt').value
+            alert(Kiemtra)
+        }
+
+    </script>
+    <script src="./tung.js"></script>
+</body>
+</html>
